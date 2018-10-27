@@ -1,7 +1,7 @@
 ## Unique palindromes
-This is a solution built for finding and printing 3 longest *unique* palindrome strings in a given input string. 
+This is a solution to find and print 3 longest *unique* palindrome strings in a given input string. 
 This solution's core algorithm based on famous Manacher’s algorithm which has the time complexity of O(n). But in
-this specific solution there is one more additional step in the algorithm to find the next longest unique palindrome
+this specific solution, there is one additional step in the algorithm to find the next longest unique palindrome
 in a recursive fashion. So in worse case, this algorithm will operate with a time complexity of O(n2).
 
 Although this specific solution runner is setup to find only 3 longest palindromes, the solution class is designed in an
