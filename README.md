@@ -1,4 +1,4 @@
-##Unique palindromes
+## Unique palindromes
 This is a solution built for finding and printing 3 longest *unique* palindrome strings in a given input string. 
 This solution's core algorithm based on famous Manacher’s algorithm which has the time complexity of O(n). But in
 this specific solution there is one more additional step in the algorithm to find the next longest unique palindrome
@@ -9,7 +9,7 @@ extensible way that it can handle all the general unique palindrome search scena
 configurations.
 (explained in below section).
 
-###Compiling and running
+### Compiling, configuring and running
 **Build Requirements**
 - Java JDK >=1.8
 - Maven >=3
