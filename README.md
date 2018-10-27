@@ -13,16 +13,16 @@ configurations.
 **Build Requirements**
 - Java JDK >=1.8
 - Maven >=3
-- An internet connection (Not required if the build system has all the necessary versions maven dependencies required by
+- An internet connection (Not required if the build system has all the necessary versions of maven dependencies required by
                             this project)
                             
 **Building**
 - Using a command line (cmd for windows, default terminal shell for mac/linux), change the directory to project root.
 - Then issue the following maven command `mvn clean compile`. This should build the project and install the class files in
 `<project_root>/target` directory.
-- To run the main application issue the following command, `mvn exec:java`. Or one case do the building and running of main
-application in single command by issuing `mvn clean compile exec:java`.
-- Running of applications should print following output
+- To run the main application issue the following command, `mvn exec:java`. Or one can build and run the main
+application using a single command `mvn clean compile exec:java`.
+- Running of application should print following output
 ```
 [INFO] --- exec-maven-plugin:1.6.0:java (default-cli) @ palindromes ---
 Text: hijkllkjih, Index: 23, Length: 10
@@ -30,12 +30,12 @@ Text: defggfed, Index: 13, Length: 8
 Text: abccba, Index: 5, Length: 6
 ```
 **Tests**
-* The unit tests can be run by issuing `mvn clean test` command.
+* The unit tests suite can be run by issuing `mvn clean test` command.
 
 **Configuration**
 - The depth of the algorithm recursion can be adjusted to maximize the performance needs according to the use case. By
-default, recursion depth is set to 2. This is set as a maven property value in pom.xml file and the property key is
-`recursion.depth.value`. Even if that key's value is empty, default value will set as 2. If this value is set to 0, The
+default, recursion depth is set to 2. This is defined as a maven property value in pom.xml file and the relevant property key is
+`recursion.depth.value`. Even if that key's value is empty, default value will set to 2 in runtime. If this value is set to 0, The
 recursion depth is set to `unlimited` and the algorithm will terminate after resolving single character level (which are not
 part of another palindrome sub-string) as the end condition.
 - The main Runner can be externally configured to print custom number of longest palindromes and it can also accept custom
